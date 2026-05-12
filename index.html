@@ -25,7 +25,7 @@
         .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
         .nav-links a:hover, .nav-links a.active { color: white; }
 
-        /* Music Player Responsive */
+        /* Music Player */
         .music-player { display: flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 40px; background: rgba(30, 40, 50, 0.4); border: 1px solid rgba(95, 127, 158, 0.2); }
         .music-btn { background: none; border: none; cursor: pointer; color: #8baec9; display: flex; align-items: center; padding: 2px; }
         .music-info { display: flex; flex-direction: column; gap: 1px; max-width: 80px; }
@@ -42,7 +42,7 @@
         #music-vol::-webkit-slider-thumb { width: 7px; height: 7px; border-radius: 50%; background: #8baec9; cursor: pointer; }
 
         /* Botones */
-        .btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 40px; font-weight: 600; font-size: 0.75rem; transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1); cursor: pointer; border: none; }
+        .btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 40px; font-weight: 600; font-size: 0.75rem; transition: all 0.4s; cursor: pointer; border: none; }
         .btn-primary { background: #2c3f4f; color: white; position: relative; overflow: hidden; }
         .btn-primary::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: left 0.5s; }
         .btn-primary:hover::before { left: 100%; }
@@ -53,7 +53,7 @@
         section { padding: 40px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.04); }
         .section-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 30px; border-left: 4px solid #5f7f9e; padding-left: 14px; opacity: 0; transform: translateX(-30px); animation: slideInLeft 0.6s ease forwards; }
 
-        /* Hero Responsive */
+        /* Hero */
         .hero { text-align: center; padding: 40px 0 30px; }
         .avatar { width: 85px; height: 85px; border-radius: 50%; object-fit: cover; border: 2px solid #3a5568; margin-bottom: 15px; transition: all 0.5s; opacity: 0; transform: scale(0.8); animation: scaleIn 0.6s ease forwards; }
         @keyframes scaleIn { 0% { opacity: 0; transform: scale(0.5); } 100% { opacity: 1; transform: scale(1); } }
@@ -70,7 +70,7 @@
         .stat-number { font-size: 1.6rem; font-weight: 800; color: #cfdfef; }
         .stat-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px; color: #7c8ea0; }
 
-        /* TIMELINE CURVADA RESPONSIVE */
+        /* TIMELINE */
         .timeline-wrap { position: relative; max-width: 100%; margin: 0 auto; padding: 20px 0 40px; }
         .timeline-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; display: none; }
         .timeline-item { display: flex; margin-bottom: 40px; position: relative; z-index: 2; opacity: 0; transform: translateY(30px); animation: fadeUp 0.5s ease forwards; flex-direction: column; align-items: center; }
@@ -79,7 +79,7 @@
         .timeline-server { font-size: 0.6rem; font-weight: 600; color: #7c8ea0; letter-spacing: 1px; margin-bottom: 5px; text-transform: uppercase; display: flex; align-items: center; gap: 5px; justify-content: center; }
         .timeline-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; justify-content: center; flex-wrap: wrap; }
         .timeline-logo { width: 40px; height: 40px; border-radius: 10px; object-fit: contain; background: rgba(0,0,0,0.5); border: 1px solid rgba(95,127,158,0.2); padding: 5px; }
-        .timeline-title { font-size: 1rem; font-weight: 700; color: #e2eaf5; display: flex; align-items: center; gap: 6px; justify-content: center; }
+        .timeline-title { font-size: 1rem; font-weight: 700; color: #e2eaf5; display: flex; align-items: center; gap: 6px; justify-content: center; flex-wrap: wrap; text-align: center; }
         .timeline-badge { display: inline-block; background: #1e2c38; padding: 2px 8px; border-radius: 40px; font-size: 0.55rem; font-weight: 600; margin-top: 3px; }
         .timeline-text { color: #b0c4de; font-size: 0.8rem; line-height: 1.5; margin: 10px 0; text-align: center; }
         .timeline-status { display: inline-flex; align-items: center; gap: 5px; font-size: 0.6rem; padding: 2px 8px; border-radius: 40px; background: rgba(0,0,0,0.2); justify-content: center; width: fit-content; margin: 0 auto; }
@@ -87,18 +87,18 @@
         .status-offline { color: #6a7c8f; }
         .timeline-dot { display: none; }
 
-        /* Reseñas Responsive */
+        /* Reseñas */
         .reviews-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
         .review-card { background: linear-gradient(135deg, rgba(25, 32, 42, 0.7), rgba(20, 25, 35, 0.5)); border-radius: 16px; padding: 18px; border: 1px solid rgba(95, 127, 158, 0.15); transition: all 0.4s; opacity: 0; transform: translateY(30px); animation: fadeUp 0.5s ease forwards; }
         .review-card:hover { transform: translateY(-5px); border-color: #5f7f9e; }
         .review-text { font-style: italic; margin-bottom: 16px; color: #e2eaf5; font-size: 0.85rem; }
         .review-author { display: flex; align-items: center; gap: 10px; padding-top: 10px; border-top: 1px solid rgba(95,127,158,0.2); }
         .review-avatar { width: 35px; height: 35px; background: linear-gradient(135deg, #2c3f4f, #1a2a36); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; }
-        .review-name { font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
-        .review-server { font-size: 0.6rem; color: #7c8ea0; display: flex; align-items: center; gap: 4px; }
-        .review-stars { color: #e6b422; font-size: 0.65rem; letter-spacing: 2px; margin-top: 3px; display: flex; align-items: center; gap: 2px; }
+        .review-name { font-weight: 700; font-size: 0.85rem; }
+        .review-server { font-size: 0.6rem; color: #7c8ea0; margin-top: 2px; }
+        .review-stars { color: #e6b422; font-size: 0.65rem; letter-spacing: 2px; margin-top: 4px; }
 
-        /* Habilidades Responsive */
+        /* Habilidades */
         .skills-container { display: grid; grid-template-columns: 1fr; gap: 25px; }
         .skill-block h3 { font-size: 1rem; margin-bottom: 15px; border-left: 3px solid #5f7f9e; padding-left: 10px; opacity: 0; transform: translateX(-20px); animation: slideInLeft 0.5s ease forwards; display: flex; align-items: center; gap: 6px; }
         .skill-item { margin-bottom: 12px; opacity: 0; transform: translateX(-20px); animation: slideInLeft 0.5s ease forwards; }
@@ -107,13 +107,14 @@
         .skill-bar-bg { height: 4px; background: #1b262f; border-radius: 6px; overflow: hidden; }
         .skill-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #5f7f9e, #8baec9); border-radius: 6px; transition: width 1s ease; }
 
-        /* Contacto Responsive */
+        /* Contacto */
         .custom-banner { margin: 20px auto; max-width: 100%; border-radius: 16px; overflow: hidden; border: 1px solid rgba(95, 127, 158, 0.3); }
         .custom-banner img { width: 100%; height: auto; display: block; }
         .contact-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
         .contact-card { background: #111a22; padding: 8px 18px; border-radius: 60px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #e2e8f0; font-weight: 500; font-size: 0.75rem; border: 1px solid #2a3a46; transition: all 0.3s; }
+        .contact-card:hover { border-color: #5f7f9e; background: #1e2e3c; transform: translateY(-2px); }
 
-        /* Chat IA Responsive */
+        /* Chat IA */
         .chat-bubble { position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
         .chat-btn { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #2c3f4f, #1a2a36); border: 1px solid rgba(95, 127, 158, 0.4); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; animation: pulseGlow 2s infinite; }
         @keyframes pulseGlow { 0%,100% { box-shadow: 0 4px 15px rgba(0,0,0,0.3); } 50% { box-shadow: 0 0 20px rgba(95,127,158,0.5); } }
@@ -124,7 +125,7 @@
         .chat-head { padding: 12px 14px; background: rgba(30, 40, 50, 0.6); border-bottom: 1px solid rgba(95, 127, 158, 0.15); display: flex; justify-content: space-between; align-items: center; }
         .chat-head-left { display: flex; align-items: center; gap: 8px; }
         .chat-avatar { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #5f7f9e; object-fit: cover; }
-        .chat-head-name { font-size: 0.8rem; font-weight: 700; color: #e2eaf5; display: flex; align-items: center; gap: 5px; }
+        .chat-head-name { font-size: 0.8rem; font-weight: 700; color: #e2eaf5; }
         .chat-head-status { font-size: 0.55rem; color: #8bc2e0; display: flex; align-items: center; gap: 3px; }
         .chat-head-status::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #8bc2e0; animation: blink 1.5s infinite; }
         @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
@@ -140,21 +141,20 @@
         .msg-typing span { width: 4px; height: 4px; border-radius: 50%; background: rgba(95, 127, 158, 0.5); animation: dotAnim 0.9s infinite; }
         @keyframes dotAnim { 0%,100% { transform: translateY(0); opacity: 0.4; } 50% { transform: translateY(-4px); opacity: 1; } }
         .chat-suggestions { padding: 6px 10px 10px; display: flex; flex-wrap: wrap; gap: 5px; }
-        .sug-btn { padding: 4px 10px; border-radius: 40px; background: rgba(45, 60, 75, 0.5); border: 1px solid rgba(95, 127, 158, 0.2); color: #b0c4de; font-size: 0.6rem; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.2s; }
+        .sug-btn { padding: 4px 10px; border-radius: 40px; background: rgba(45, 60, 75, 0.5); border: 1px solid rgba(95, 127, 158, 0.2); color: #b0c4de; font-size: 0.6rem; cursor: pointer; transition: all 0.2s; }
         .sug-btn:hover { background: rgba(95, 127, 158, 0.4); color: white; transform: scale(1.02); }
         .chat-input-row { padding: 10px; display: flex; gap: 6px; background: #0d1117; border-top: 1px solid rgba(95, 127, 158, 0.1); }
-        .chat-input { flex: 1; background: rgba(25, 35, 45, 0.8); border: 1px solid #2a3a46; border-radius: 40px; color: white; font-size: 0.75rem; padding: 7px 12px; outline: none; transition: border 0.2s; }
+        .chat-input { flex: 1; background: rgba(25, 35, 45, 0.8); border: 1px solid #2a3a46; border-radius: 40px; color: white; font-size: 0.75rem; padding: 7px 12px; outline: none; }
         .chat-input:focus { border-color: #5f7f9e; }
         .chat-send { background: linear-gradient(135deg, #2c3f4f, #1a2a36); border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
         .chat-send:hover { transform: scale(1.05); background: #3d5a6e; }
 
-        footer { text-align: center; padding: 20px 0; font-size: 0.65rem; color: #5e6f82; display: flex; align-items: center; justify-content: center; gap: 6px; }
+        footer { text-align: center; padding: 20px 0; font-size: 0.65rem; color: #5e6f82; }
 
         .page { display: none; }
         .page.active { display: block; animation: pageFade 0.4s ease; }
         @keyframes pageFade { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* Tablet */
         @media (min-width: 768px) {
             .container { padding: 0 24px; }
             .reviews-grid { grid-template-columns: repeat(2, 1fr); }
@@ -164,16 +164,17 @@
             .timeline-item:nth-child(even) { justify-content: flex-end; }
             .timeline-content { width: 45%; padding: 20px; }
             .timeline-svg { display: block; }
-            .timeline-dot { display: block; position: absolute; width: 12px; height: 12px; background: #5f7f9e; border: 2px solid #0a0c12; border-radius: 50%; box-shadow: 0 0 0 2px rgba(95,127,158,0.3); transition: all 0.4s; z-index: 10; }
+            .timeline-dot { display: block; position: absolute; width: 12px; height: 12px; background: #5f7f9e; border: 2px solid #0a0c12; border-radius: 50%; box-shadow: 0 0 0 2px rgba(95,127,158,0.3); z-index: 10; }
             .timeline-item:nth-child(odd) .timeline-dot { right: -7px; top: 50%; transform: translateY(-50%); }
             .timeline-item:nth-child(even) .timeline-dot { left: -7px; top: 50%; transform: translateY(-50%); }
             .timeline-dot.offline { background: #4a5a6a; }
-            .timeline-content:hover .timeline-dot { transform: translateY(-50%) scale(1.4); background: #8baec9; box-shadow: 0 0 0 4px rgba(95,127,158,0.4); }
             .hero h1 { font-size: 2.2rem; }
             .stat-number { font-size: 1.8rem; }
+            .timeline-text { text-align: left; }
+            .timeline-title { justify-content: flex-start; }
+            .timeline-server { justify-content: flex-start; }
         }
 
-        /* Desktop */
         @media (min-width: 1024px) {
             .container { padding: 0 32px; }
             .reviews-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -237,9 +238,9 @@
             <section>
                 <h2 class="section-title">Sobre mí</h2>
                 <div style="max-width:100%">
-                    <p style="margin-bottom:14px;opacity:0;animation:fadeUp 0.6s ease 0.2s forwards; display:flex; align-items:center; gap:6px; flex-wrap:wrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg> Me llamo <strong>Pablo</strong>, conocido como <strong>paraujoIab</strong>. Llevo más de 3 años trabajando como staff, manager y organizador de eventos en servidores de Minecraft.</p>
-                    <p style="margin-bottom:14px;opacity:0;animation:fadeUp 0.6s ease 0.3s forwards; display:flex; align-items:center; gap:6px; flex-wrap:wrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="2.18"/><path d="M7 2v20M17 2v20M2 12h20"/></svg> He ocupado todos los rangos, desde <strong>Founder</strong> hasta <strong>Soporte</strong>. Conozco bien las responsabilidades y límites de cada cargo dentro de una network.</p>
-                    <p style="opacity:0;animation:fadeUp 0.6s ease 0.4s forwards; display:flex; align-items:center; gap:6px; flex-wrap:wrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Mi filosofía: compromiso absoluto, comunicación clara y trabajo en equipo.</p>
+                    <p style="margin-bottom:14px;opacity:0;animation:fadeUp 0.6s ease 0.2s forwards">Me llamo <strong>Pablo</strong>, conocido como <strong>paraujoIab</strong>. Llevo más de 3 años trabajando como staff, manager y organizador de eventos en servidores de Minecraft.</p>
+                    <p style="margin-bottom:14px;opacity:0;animation:fadeUp 0.6s ease 0.3s forwards">He ocupado todos los rangos, desde <strong>Founder</strong> hasta <strong>Soporte</strong>. Conozco bien las responsabilidades y límites de cada cargo dentro de una network.</p>
+                    <p style="opacity:0;animation:fadeUp 0.6s ease 0.4s forwards">Mi filosofía: compromiso absoluto, comunicación clara y trabajo en equipo para lograr servidores estables y activos.</p>
                 </div>
                 <div class="stats-grid" style="justify-content:flex-start;margin-top:35px; gap:25px">
                     <div class="stat-item"><div class="stat-number counter" data-target="500" data-prefix="+">0</div><div class="stat-label">Usuarios gestionados</div></div>
@@ -255,14 +256,14 @@
                 <h2 class="section-title">Habilidades</h2>
                 <div class="skills-container">
                     <div class="skill-block">
-                        <h3><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Gestión / Staff</h3>
+                        <h3>Gestión / Staff</h3>
                         <div class="skill-item"><div class="skill-info"><span>Control y moderación</span><span>95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div></div>
                         <div class="skill-item"><div class="skill-info"><span>Organización</span><span>94%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="94"></div></div></div>
                         <div class="skill-item"><div class="skill-info"><span>Liderazgo</span><span>90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div></div>
                         <div class="skill-item"><div class="skill-info"><span>Comunicación</span><span>88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
                     </div>
                     <div class="skill-block">
-                        <h3><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> Configuración & Técnica</h3>
+                        <h3>Configuración & Técnica</h3>
                         <div class="skill-item"><div class="skill-info"><span>Plugins (LuckPerms, TAB)</span><span>90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div></div>
                         <div class="skill-item"><div class="skill-info"><span>Plataformas (Bungee, Velocity)</span><span>82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div></div>
                         <div class="skill-item"><div class="skill-info"><span>Optimización rendimiento</span><span>88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
@@ -270,7 +271,7 @@
                     </div>
                 </div>
                 <div style="margin-top:30px">
-                    <h3 style="margin-bottom:12px;font-size:0.9rem;opacity:0;animation:slideInLeft 0.5s ease 0.5s forwards; display:flex; align-items:center; gap:6px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17l2-2 2 2 4-4 4 4 2-2 2 2"/><circle cx="12" cy="12" r="10"/></svg> Herramientas</h3>
+                    <h3 style="margin-bottom:12px;font-size:0.9rem;opacity:0;animation:slideInLeft 0.5s ease 0.5s forwards">Herramientas</h3>
                     <div style="display:flex;flex-wrap:wrap;gap:6px;opacity:0;animation:fadeUp 0.5s ease 0.6s forwards">
                         <span class="btn-outline" style="padding:4px 12px; font-size:0.7rem">LuckPerms</span>
                         <span class="btn-outline" style="padding:4px 12px; font-size:0.7rem">TAB</span>
@@ -309,7 +310,7 @@
         <div class="container">
             <section style="text-align:center">
                 <h2 class="section-title" style="border-left:none;padding-left:0">Contacto</h2>
-                <p style="margin-bottom:20px;opacity:0;animation:fadeUp 0.6s ease 0.1s forwards; display:flex; align-items:center; justify-content:center; gap:6px; flex-wrap:wrap;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> ¿Necesitas un manager confiable? Escríbeme.</p>
+                <p style="margin-bottom:20px;opacity:0;animation:fadeUp 0.6s ease 0.1s forwards">¿Necesitas un manager confiable? Escríbeme y hablemos.</p>
                 <div class="custom-banner">
                     <img src="banner-paraujoIab-manager.png" alt="paraujoIab Manager Banner" onerror="this.src='https://placehold.co/800x200/2c3e4e/white?text=paraujoIab+-+Manager+Profesional'">
                 </div>
@@ -338,11 +339,11 @@
         </div>
         <div id="chat-messages" class="chat-messages"></div>
         <div class="chat-suggestions">
-            <button class="sug-btn" onclick="askSuggestion('¿En cuántos servidores has trabajado?')"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="2.18"/></svg> Servidores</button>
-            <button class="sug-btn" onclick="askSuggestion('¿Cuáles son tus habilidades?')"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Habilidades</button>
-            <button class="sug-btn" onclick="askSuggestion('¿Qué rangos has tenido?')"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Rangos</button>
-            <button class="sug-btn" onclick="askSuggestion('¿Cómo contactarte?')"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7"/></svg> Contacto</button>
-            <button class="sug-btn" onclick="askSuggestion('¿Cuántos años de experiencia tienes?')"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Experiencia</button>
+            <button class="sug-btn" onclick="askSuggestion('¿En cuántos servidores has trabajado?')">Servidores</button>
+            <button class="sug-btn" onclick="askSuggestion('¿Cuáles son tus habilidades?')">Habilidades</button>
+            <button class="sug-btn" onclick="askSuggestion('¿Qué rangos has tenido?')">Rangos</button>
+            <button class="sug-btn" onclick="askSuggestion('¿Cómo contactarte?')">Contacto</button>
+            <button class="sug-btn" onclick="askSuggestion('¿Cuántos años de experiencia tienes?')">Experiencia</button>
         </div>
         <div class="chat-input-row">
             <input type="text" id="chat-input" class="chat-input" placeholder="Escribe tu pregunta..." maxlength="120" onkeydown="if(event.key==='Enter') sendChat()">
@@ -356,47 +357,46 @@
     </button>
 </div>
 
-<footer><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> © 2026 paraujoIab — Todos los derechos reservados</footer>
+<footer>© 2026 paraujoIab — Todos los derechos reservados</footer>
 
 <script>
-    // DATOS ORIGINALES DE LOS SERVIDORES (SIN MODIFICAR)
+    // DATOS ORIGINALES COMPLETOS DE LOS SERVIDORES (SIN RECORTAR)
     const serverData = [
-        { name:"MineRush Network", badge:"Founder", status:"offline", logo:"mine-rush.png", text:"Llegué como Founder junto a Fakerki08 en agosto de 2024. Organicé el staff, alcancé 50 jugadores simultáneos. Me retiré por diferencias con el dueño principal." },
-        { name:"MineChaos Network", badge:"Founder", status:"offline", logo:"mine-chaos.png", text:"Proyecto junto a Fakerki08. Gestioné estructura y equipo. Cerró por inactividad." },
-        { name:"MineGlow Network", badge:"Manager", status:"offline", logo:"mine-glow.png", text:"Entré como Manager pero los dueños estaban inactivos. Me retiré." },
-        { name:"MineLow Network", badge:"Sr Mod", status:"online", logo:"mine-low.png", text:"Activo desde diciembre de 2025. Experiencia muy enriquecedora." },
-        { name:"MineSkill Network", badge:"Manager", status:"offline", logo:"mine-skill.png", text:"Entré como Manager. El servidor cerró por falta de ingresos." },
-        { name:"MineDark Network", badge:"Manager", status:"offline", logo:"mine-dark.png", text:"Identifiqué y retiré staffs abusivos, fortaleciendo el equipo." },
-        { name:"MineDash Network", badge:"Owner", status:"online", logo:"mine-dash.png", text:"Owner actual, fusionado con KeniBox junto a TheElivan." },
-        { name:"EgoCraft Network", badge:"Manager", status:"online", logo:"ego-craft.png", text:"Manager en servidor en desarrollo, organizando staff." },
-        { name:"EskMC Network", badge:"Administrador", status:"online", logo:"esk-mc.png", text:"Box PvP, entré como Administrador por mi trayectoria." },
-        { name:"KeniBox Network", badge:"Owner", status:"online", logo:"keni-box.png", text:"Owner junto a Legendario. Proyecto estable." },
-        { name:"MineIce Network", badge:"Administrador", status:"offline", logo:"mine-ice.png", text:"Poca actividad actualmente." },
-        { name:"NightBox Network", badge:"Señor Administrador", status:"online", logo:"night-box.png", text:"Siempre me gustó como jugador, ahora soy Staff." }
+        { name:"MineRush Network", badge:"Founder", status:"offline", logo:"mine-rush.png", text:"Llegué como Founder junto a Fakerki08 en agosto de 2024 por mi experiencia previa. Me encargué de la organización del staff, toma de decisiones y planificación del servidor. Alcanzamos 50 usuarios simultáneos. Me retiré por problemas internos con el dueño principal." },
+        { name:"MineChaos Network", badge:"Founder", status:"offline", logo:"mine-chaos.png", text:"Proyecto iniciado junto a Fakerki08 el 17 de marzo de 2024. Gestioné la organización general, la estructura y la coordinación del equipo. El servidor cerró por inactividad del staff y diferencias organizativas con mi socio." },
+        { name:"MineGlow Network", badge:"Manager", status:"offline", logo:"mine-glow.png", text:"Ingresé como Manager gracias a mi experiencia. Me retiré por la inactividad prolongada tanto del servidor como de los dueños, lo que impedía avanzar con el proyecto." },
+        { name:"MineLow Network", badge:"Sr Mod", status:"online", logo:"mine-low.png", text:"Servidor donde actualmente trabajo como Sr Mod desde el 19 de diciembre de 2025. Ha sido una de mis experiencias más enriquecedoras y lo recuerdo con mucho aprecio." },
+        { name:"MineSkill Network", badge:"Manager", status:"offline", logo:"mine-skill.png", text:"Entré como Manager por mis conocimientos en comandos y gestión de staff. El servidor cerró porque el owner no generaba las ganancias necesarias para sostenerlo." },
+        { name:"MineDark Network", badge:"Manager", status:"offline", logo:"mine-dark.png", text:"Ingresé como Manager por mi experiencia. En mi primera semana identifiqué y retiré a 2 staffs que abusaban de la confianza del dueño, lo que fortaleció mucho el equipo." },
+        { name:"MineDash Network", badge:"Owner", status:"online", logo:"mine-dash.png", text:"Soy Owner de MineDash, proyecto que fusionamos con KeniBox junto al streamer TheElivan, unificando ambas comunidades bajo una sola red." },
+        { name:"EgoCraft Network", badge:"Manager", status:"online", logo:"ego-craft.png", text:"Ingresé como Manager por mi experiencia y conocimientos. El servidor aún no ha abierto oficialmente, pero ya me encuentro activo organizando el equipo y la estructura." },
+        { name:"EskMC Network", badge:"Administrador", status:"online", logo:"esk-mc.png", text:"Servidor de box pvp donde entré directamente como Administrador gracias a mi trayectoria como staff y manager en networks anteriores." },
+        { name:"KeniBox Network", badge:"Owner", status:"online", logo:"keni-box.png", text:"Proyecto donde soy Owner junto a Legendario, también dueño de MineLow. Entramos como Founders por nuestro conocimiento en plugins, configuración y la confianza que se tiene en nuestro trabajo." },
+        { name:"MineIce Network", badge:"Administrador", status:"offline", logo:"mine-ice.png", text:"Ingresé como Administrador por mi experiencia, y porque uno de los dueños ya había trabajado conmigo antes. El servidor está poco activo actualmente por falta de jugadores." },
+        { name:"NightBox Network", badge:"Señor Administrador", status:"online", logo:"night-box.png", text:"Ingresé como Señor Administrador por mis conocimientos en plugins, configuraciones y permisos. Nightbox es un servidor que siempre me gustó como jugador, así que poder trabajar aquí es algo especial." }
     ];
 
-    // RESEÑAS ORIGINALES
+    // RESEÑAS ORIGINALES COMPLETAS
     const reviewsData = [
-        { owner:"! UserƬhس", server:"MineRush Network", text:"La Administración Agradece todo lo que ha hecho paraujoIab, lo recomendamos al 100%, fue muy útil. Si lo contratan, no se arrepentirán.", stars:5 },
-        { owner:"tito", server:"MineSkill Network", text:"El trabajo de paraujolab fue muy bueno, conseguimos buenos staff y usuarios nuevos. Completó sus tareas muy rápido.", stars:5 },
-        { owner:"Keyxzz", server:"MineDark Network", text:"Es un buen manager, sabe lo que hace. Confiable 100% recomendado.", stars:5 },
-        { owner:"SrCapoo", server:"EgoCraft Network", text:"Super recomendado, muy dedicado. Lo que hizo lo hizo perfecto.", stars:5 }
+        { owner:"! UserƬhس", server:"MineRush Network", text:"La Administración Agradece todo lo que a hecho paraujoIab, lo recomendamos al 100%, fue muy util dentro de nuestro proyecto, si lo contratar creanme que no se arrepentiran.", stars:5 },
+        { owner:"tito", server:"MineSkill Network", text:"El trabajo de paraujolab fue muy bueno, conseguimos muchos buenos staff y user nuevos, en su trabajo como manager no tuvo casi ningun error y logro completar sus tareas muy rapido, agradezco profundamente su colaboracion.", stars:5 },
+        { owner:"Keyxzz", server:"MineDark Network", text:"Es un buen manager, sabe lo que hace tanto expresándose y organizandose además de eso es confiable 100% recomendado.", stars:5 },
+        { owner:"SrCapoo", server:"EgoCraft Network", text:"La verdad super recomendado, muy dedicado en su trabajo y en lo que hace, lo hace super bien, aunque lo tuvimos poco tiempo trabajando en nuestro servidor, lo que hizo lo hizo perfecto.", stars:5 }
     ];
 
-    // KNOWLEDGE BASE
-    const CONTACT_MSG = '⚠️ No tengo información específica sobre eso.<br><br>📧 Contáctame por email: <a href="mailto:araujoluna2021@gmail.com">araujoluna2021@gmail.com</a><br>💬 o por Discord: <a href="https://discord.com/users/962462312160182342" target="_blank">andyaleyt</a>';
+    const CONTACT_MSG = '⚠️ No tengo información específica sobre eso.<br><br>📧 Contáctame por email: <a href="mailto:araujoluna2021@gmail.com">araujoluna2021@gmail.com</a><br>💬 o por Discord: <a href="https://discord.com/users/962462312160182342" target="_blank">andyaleyt</a><br><br>😊 ¡Estaré encantado de responderte personalmente!';
     
     const KB = [
-        { keys: ['cuantos server','servidores has','servers has'], answer: '📊 He trabajado en <strong>12 servidores</strong> en total.' },
-        { keys: ['servidores activo','actualmente','donde trabajas'], answer: '🔥 Actualmente estoy activo en 6 servidores.' },
-        { keys: ['habilidad','skill','que sabes'], answer: '💪 Moderación 95%, Organización 94%, Liderazgo 90%, Comunicación 88%, Configuración de plugins.' },
-        { keys: ['rango','rangos','cargos'], answer: '👑 He sido: Founder, Owner, Manager, Administrador, Sr Mod, Moderador y Soporte.' },
-        { keys: ['experien','años','tiempo'], answer: '⏱️ Llevo <strong>más de 3 años</strong> activo en servidores de Minecraft.' },
-        { keys: ['plugin','luckperm','tab','bungee'], answer: '🛠️ Experiencia con LuckPerms, TAB, ChatManager, Akropolis, BungeeCord, Velocity.' },
-        { keys: ['contact','discord','gmail','correo'], answer: '📬 Discord: andyaleyt | Email: araujoluna2021@gmail.com' },
-        { keys: ['quien eres','como te llamas'], answer: '👋 Soy Pablo, conocido como paraujoIab. Manager y organizador de eventos.' },
+        { keys: ['cuantos server','servidores has','servers has','cuantos servidores'], answer: '📊 He trabajado en <strong>12 servidores</strong> en total.' },
+        { keys: ['servidores activo','actualmente','donde trabajas','trabajas ahora'], answer: '🔥 Actualmente estoy activo en 6 servidores.' },
+        { keys: ['habilidad','skill','que sabes','habilidades'], answer: '💪 Mis principales habilidades: Moderación 95%, Organización 94%, Liderazgo 90%, Comunicación 88%, Configuración de plugins.' },
+        { keys: ['rango','rangos','cargos','que rangos'], answer: '👑 He sido: Founder, Owner, Manager, Administrador, Sr Mod, Moderador y Soporte.' },
+        { keys: ['experien','años','tiempo','cuanto llevas'], answer: '⏱️ Llevo <strong>más de 3 años</strong> activo en servidores de Minecraft.' },
+        { keys: ['plugin','plugins','luckperm','tab','chatmanager','akropolis'], answer: '🛠️ Experiencia con LuckPerms, TAB, ChatManager, Akropolis, BungeeCord, Velocity, Spigot, PaperMC.' },
+        { keys: ['contact','contacto','discord','gmail','correo','hablar','contratar'], answer: '📬 Discord: andyaleyt | Email: araujoluna2021@gmail.com' },
+        { keys: ['quien eres','quién eres','como te llamas','nombre'], answer: '👋 Soy Pablo, conocido como paraujoIab. Manager y organizador de eventos.' },
         { keys: ['disponible','libre','puedes trabajar'], answer: '✅ ¡Sí! Estoy disponible para contrataciones.' },
-        { keys: ['hola','buenas','saludos'], answer: '😊 ¡Hola! Soy el asistente de paraujoIab.' }
+        { keys: ['hola','buenas','saludos','ola','hi'], answer: '😊 ¡Hola! Soy el asistente de paraujoIab.' }
     ];
 
     function botAnswer(q) {
@@ -447,7 +447,6 @@
     }
     function askSuggestion(q) { addMsg(q, 'user'); addBotMsg(botAnswer(q)); }
 
-    // Curva para la línea de tiempo
     function generateCurvePath(itemCount) {
         let path = 'M 50 0';
         for (let i = 1; i <= itemCount; i++) {
@@ -512,7 +511,6 @@
 
     document.querySelectorAll('[data-page]').forEach(el => el.addEventListener('click', (e) => { e.preventDefault(); showPage(el.getAttribute('data-page')); }));
 
-    // Música automática
     const audio = new Audio('bajo-de-la-piel.mp3');
     audio.loop = true; audio.volume = 0.4;
     let isPlaying = false, isMuted = false;
@@ -525,5 +523,5 @@
     renderTimeline(); renderReviews(); showPage('inicio');
     setTimeout(animateCounters, 500);
 </script>
-</body/>
+</body>
 </html>
